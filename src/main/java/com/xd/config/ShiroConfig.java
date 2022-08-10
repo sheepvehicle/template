@@ -11,7 +11,10 @@ import org.springframework.stereotype.Controller;
 import java.util.HashMap;
 import java.util.Scanner;
 
-@Configuration
+/**
+ * shiro配置文件
+ */
+//@Configuration
 public class ShiroConfig {
 
     @Bean

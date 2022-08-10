@@ -9,6 +9,14 @@ spring:
   redis:
     host: localhost
     port: 6379
+
 mybatis-plus:
   configuration:
+    #    打印日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #    二级缓存
+    cache-enabled: true
+  #    映射mapper文件
+  mapper-locations: classpath:mapper/*.xml
+  #  映射实体类别名
+  type-aliases-package:
