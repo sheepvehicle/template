@@ -11,9 +11,9 @@ import lombok.experimental.Accessors;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Accessors(chain = true)
+@Accessors(chain = true) //支持链式编程
 public class Result {
-    private Integer status;   //状态码 , //0--失败， 1--成功  
+    private Integer status;   //状态码 , //0--失败， 1--成功
     private long total;   //返回数据的总长度
     private Object data;    //返回的数据
     private Object rows;    //bootStrapTable返回的数据
