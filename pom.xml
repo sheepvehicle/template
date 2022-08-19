@@ -58,10 +58,10 @@
             <scope>runtime</scope>
         </dependency>
         <!-- security权限管理-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
-        <!--        </dependency>-->
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-security</artifactId>
+                </dependency>
         <!--web启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
