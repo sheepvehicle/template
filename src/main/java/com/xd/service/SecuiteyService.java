@@ -1,5 +1,5 @@
 package com.xd.service;
-
+/*
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
@@ -14,13 +14,11 @@ public class SecuiteyService implements UserDetailsService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
-
     /**
      * @param username the username identifying the user whose data is required.
      * @return
      * @throws UsernameNotFoundException
-     */
+    * /
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         System.out.println("username = " + username);
@@ -35,5 +33,6 @@ public class SecuiteyService implements UserDetailsService {
     }
 
 
-}
+}*/
+public class  SecuiteyService{}
 

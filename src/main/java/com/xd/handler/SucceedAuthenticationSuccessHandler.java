@@ -1,5 +1,5 @@
 package com.xd.handler;
-
+/*
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -23,4 +23,5 @@ public class SucceedAuthenticationSuccessHandler implements AuthenticationSucces
         System.out.println("principal = " + principal.toString());//可获得user对象
         response.sendRedirect(url);
     }
-}
+}*/
+class SucceedAuthenticationSuccessHandler{}

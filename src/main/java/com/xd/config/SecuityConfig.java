@@ -1,6 +1,6 @@
 package com.xd.config;
 
-
+/*
 import com.xd.handler.ErrorAuthenticationFailureHandler;
 import com.xd.handler.SucceedAuthenticationSuccessHandler;
 import com.xd.service.SecuiteyService;
@@ -18,11 +18,10 @@ import org.springframework.security.web.authentication.rememberme.PersistentToke
 import javax.sql.DataSource;
 
 
-@Configuration
+//@Configuration
 //@EnableWebSecurity    // 添加 security 过滤器
-@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)    // 启用方法级别的权限认证
+//@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)    // 启用方法级别的权限认证
 public class SecuityConfig extends WebSecurityConfigurerAdapter {
-
 
     @Autowired
     private DataSource dataSource;
@@ -38,9 +37,7 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
         // 自动建表，第一次启动的时候需要建表，第二次启动的时候需要注释掉
 //        jdbcTokenRepository.setCreateTableOnStartup(true);
         return jdbcTokenRepository;
-
     }
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -55,7 +52,7 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
 
         //授权认证
         http.authorizeRequests().
-                antMatchers("/login.html", "/er", "/js/**", "**/*.js").permitAll().//放行的请求
+                antMatchers("/login.html", "/er", "/js/**", "**\*.js").permitAll().//放行的请求
                 antMatchers("/success").anonymous().//允许匿名访问
                 antMatchers("/er").hasAuthority("admin").//具有什么权限可以访问一个
                 antMatchers("/toError").
@@ -82,4 +79,6 @@ public class SecuityConfig extends WebSecurityConfigurerAdapter {
     public PasswordEncoder getPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
-}
+}*/
+
+class SecuityConfig{}

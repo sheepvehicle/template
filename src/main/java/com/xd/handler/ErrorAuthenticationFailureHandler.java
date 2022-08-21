@@ -1,5 +1,5 @@
 package com.xd.handler;
-
+/*
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 
@@ -18,4 +18,5 @@ public class ErrorAuthenticationFailureHandler implements AuthenticationFailureH
         System.out.println("exception.getCause() = " + exception.getCause());//打印出
         response.sendRedirect(url);
     }
-}
+}*/
+class ErrorAuthenticationFailureHandler{}
