@@ -24,10 +24,10 @@ public class AsynchronousTasksService {
     static final String product = "Dysmsapi";
     static final String domain = "dysmsapi.aliyuncs.com";
     //这个需要自己的
-    static final String accessKeyId = "LTAI5tQ7MAzRNCBNKjZgq2Yq";
-    static final String accessKeySecret = "QflP0gp0DaCjST2Hrj3LYAhd4YiZQ4";
-    static final String templateCode = "SMS_168825399";
-    static final String signName = "快速指定文件夹清理";
+    static final String accessKeyId = "*****";
+    static final String accessKeySecret = "****";
+    static final String templateCode = "*****";
+    static final String signName = "****";
 
     @Async
     public void sendSms(String telephone, String code) throws ClientException {
