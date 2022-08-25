@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * shiro 的具体 授权认证类
+ */
 public class AccoutRealm extends AuthorizingRealm {
     @Autowired
 //    private UserService userService;

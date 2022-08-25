@@ -14,7 +14,6 @@ public class RedisUtil {
     @Autowired
     private RedisTemplate redisTemplate;
 
-
     //- - - - - - - - - - - - - - - - - - - - -  公共方法 - - - - - - - - - - - - - - - - - - - -
 
     /**

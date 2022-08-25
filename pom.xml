@@ -85,6 +85,11 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.5.1</version>
         </dependency>
+        <!--定时任务-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+        </dependency>
         <!--数据库连接驱动 -->
         <dependency>
             <groupId>mysql</groupId>
