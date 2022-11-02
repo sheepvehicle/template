@@ -15,7 +15,7 @@ public class TimedTask {
      * 这是一个示例
      * cron 表达式在线生成地址：https://cron.qqe2.com/
      */
-    @Scheduled(cron ="0/1 * * * * ?")
+    @Scheduled(cron ="* * 1 * * ?")
     public void task(){
         System.out.println(Thread.currentThread().getName()+"```````");
     }

@@ -2,6 +2,7 @@ package com.xd.util.generator;
 
 import cn.hutool.core.io.FileUtil;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -17,7 +18,6 @@ public class CreateSql {
     public static final String BASE_PATH = System.getProperty("user.dir") + "/src/main/java/com/xd/";   // 基础包名
     public static final String TEMPLATE = "create_table.template";  // 配置文件位置
     public static final String SPACE2 = "  ";
-
 
 
     public static void main(String[] args) {

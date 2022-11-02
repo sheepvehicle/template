@@ -1,15 +1,13 @@
 package com.xd.controller;
 
 import com.aliyuncs.exceptions.ClientException;
+import com.xd.GadUserInfo;
 import com.xd.asynctasks.AsynchronousTasksService;
 import com.xd.util.BusinessException;
 import com.xd.util.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/login")
@@ -41,5 +39,11 @@ public class LoginController {
           throw  new BusinessException("验证码输入有误");
         }
         return Result.success();
+    }
+    @PostMapping(value="aa",produces="application/json;charset=utf-8")
+    public Result adda(@RequestBody GadUserInfo userInfo){
+        log.info(userInfo.toString());
+        return Result.success();
+
     }
 }

@@ -1,4 +1,15 @@
 spring:
+#  应用名称
+  application:
+    name: rabbitmq-demo
+#    Rabbitmq配置
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /test
+
   datasource:
     #    driver-class-name: com.mysql.cj.jdbc.Driver
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
@@ -23,8 +34,6 @@ spring:
           await-termination: false
           #        线程最大的等待时间，防止线程陷入循环关不掉
           await-termination-period: 10s
-
-
 mybatis-plus:
   configuration:
     #    打印日志
