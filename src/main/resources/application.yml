@@ -28,6 +28,7 @@ spring:
         pool:
           size: 10
         thread-name-prefix: hanhan
+
       execution:
         shutdown:
           #        线程关闭时是否等所有任务结束
