@@ -20,4 +20,10 @@ private String username;
 private String password;
 private String email;
 private Long userId;
+private String password;
+private String email;
+private Long userId;
+private String password;
+private String email;
+private Long userId;
 }
