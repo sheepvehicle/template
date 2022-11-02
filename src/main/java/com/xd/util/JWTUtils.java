@@ -4,9 +4,6 @@ package com.xd.util;
 //import com.example.entity.Member;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-
-import java.util.Date;
 
 /**
  * jwt工具类

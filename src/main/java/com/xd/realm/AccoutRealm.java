@@ -1,7 +1,5 @@
 package com.xd.realm;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;

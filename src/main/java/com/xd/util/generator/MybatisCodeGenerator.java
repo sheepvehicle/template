@@ -209,9 +209,8 @@ public class MybatisCodeGenerator {
                 continue;
             }
             // 生成表格
-            tableColumnBuilder.append(space6 + space12 + "<el-table-column prop=\"" + StrUtil.toCamelCase(tableColumn.getColumnName()) + "\" label=\"" + tableColumn.getColumnComment() + "\"> </el-table-column>\n");
-            formItemBuilder.append(space12 + space12 + "<el-form-item label=\"" + tableColumn.getColumnComment() + "\" label-width=\"100px\">\n")
-                    .append(space12 + space12 + space4 + "<el-input v-model=\"entity." + StrUtil.toCamelCase(tableColumn.getColumnName()) + "\" autocomplete=\"off\" style=\"width: 80%\"></el-input>\n")
+            tableColumnBuilder.append(space6 + space12 + "<el-table-column prop=\"").append(StrUtil.toCamelCase(tableColumn.getColumnName())).append("\" label=\"").append(tableColumn.getColumnComment()).append("\"> </el-table-column>\n");
+            formItemBuilder.append(space12 + space12 + "<el-form-item label=\"").append(tableColumn.getColumnComment()).append("\" label-width=\"100px\">\n").append(space12 + space12 + space4 + "<el-input v-model=\"entity.").append(StrUtil.toCamelCase(tableColumn.getColumnName())).append("\" autocomplete=\"off\" style=\"width: 80%\"></el-input>\n")
                     .append(space12 + space12 + "</el-form-item>\n");
         }
         map.put("tableColumn", tableColumnBuilder.toString());
